@@ -8,12 +8,16 @@ public class Ticket extends Cliente{
     //public Ticket(String nombre, String apellido, int numOrden,) {super(nombre, apellido);}
 
 
+    public Ticket(){
+
+    }
     public Ticket(String nombre, String apellido, int numOrden, String itemsPizza, float priceTicket) {
         super(nombre, apellido);
         this.numOrden = numOrden;
         ItemsPizza = itemsPizza;
         PriceTicket = priceTicket;
     }
+
 
     public int getNumOrden() {
         return numOrden;
@@ -41,8 +45,8 @@ public class Ticket extends Cliente{
 
     @Override
     public String toString() {
-        return "Items selecionados de Pizza='" + ItemsPizza + '\'' +
-                "numero de Orden=" + numOrden +"\nPrecio Total=" + PriceTicket
+        return super.toString() +"\nItems selecionados de Pizza=" + ItemsPizza +
+                "\nnumero de Orden=" + numOrden +"\nPrecio Total=" + PriceTicket
                 +"\n//////////////////////////////////////////////";
     }
 }

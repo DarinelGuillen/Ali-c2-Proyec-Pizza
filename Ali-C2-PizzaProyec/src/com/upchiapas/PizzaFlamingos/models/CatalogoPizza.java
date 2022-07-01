@@ -12,14 +12,15 @@ public class CatalogoPizza {
         byte SIZE;
 
         public boolean AddCatalagoPredeterminados () {
+
             SIZE = (byte) Catalago.size();
             System.out.println("SIZE ====== "+SIZE);
-            Catalago.add(new Pizza((byte) 1, "Hawaiana", (float) 120));
-            Catalago.add(new Pizza((byte) 2, "Orillas de queso", (float) 230));
-            Catalago.add(new Pizza((byte) 2, "Peperoni", (float) 130));
-            Catalago.add(new Pizza((byte) 3, "4 quesos", (float) 200));
-            Catalago.add(new Pizza((byte) 4, "Mexicana", (float) 100));
-            Catalago.add(new Pizza((byte) 5, "Chiken Hawaiana", (float) 300));
+            Catalago.add(new Pizza((byte) 12, "Hawaiana", (float) 120));
+            Catalago.add(new Pizza((byte) 23, "Orillas de queso", (float) 230));
+            Catalago.add(new Pizza((byte) 34, "Peperoni", (float) 130));
+            Catalago.add(new Pizza((byte) 45, "4 quesos", (float) 200));
+            Catalago.add(new Pizza((byte) 56, "Mexicana", (float) 100));
+            Catalago.add(new Pizza((byte) 67, "Chiken Hawaiana", (float) 300));
             SIZE= (byte) Catalago.size();
             System.out.println("SIZE 2  ====== "+SIZE);
             return true;
@@ -31,11 +32,6 @@ public class CatalogoPizza {
 
         }
         public ArrayList<Pizza> ShowCatalagoPizza () {
-            ArrayList<Pizza> pizza = new ArrayList<>();
-            for (int i = 0; i < Catalago.size(); i++) {
-                //System.out.println("" + Catalago.get(i));
-                //return Catalago.get(i);
-            }
             return Catalago;
         }
 

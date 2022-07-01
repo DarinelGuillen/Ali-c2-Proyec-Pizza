@@ -32,7 +32,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "//////////////////////////////////////////////" +
+        return "\n//////////////////////////////////////////////\n" +
                 "Ticket de " +"Cliente \n" +
                 "Nombre= '" + Nombre + '\'' +
                 ", Apellido= '" + Apellido;
